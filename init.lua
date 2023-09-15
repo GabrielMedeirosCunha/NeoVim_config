@@ -30,6 +30,3 @@ require('lazy').setup("plugins")
 require("gabriel.plugins_config")
 require("gabriel.vim_config")
 
-
-
-
