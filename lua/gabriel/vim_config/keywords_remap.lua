@@ -1,7 +1,5 @@
 -- See `:help vim.keymap.set()`
 
-vim.keymap.set("n","<leader>e", vim.cmd.Ex)
-
 -- Keymaps for better default experience
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
