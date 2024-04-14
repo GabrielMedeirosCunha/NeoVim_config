@@ -1,52 +1,48 @@
--- See `:help vim.o`
+vim.opt.number = true
+vim.opt.relativenumber = true
 
+vim.opt.showmode = false
 
-vim.wo.number = true
-vim.o.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = true
+vim.opt.smartindent = true
+vim.opt.breakindent = true
 
-vim.o.smartindent = true
+vim.opt.wrap = false
 
-vim.o.wrap = false
--- Set highlight on search
-vim.o.hlsearch = false
-vim.o.incsearch = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
--- Enable mouse mode
-vim.o.mouse = 'a'
+vim.opt.mouse = 'a'
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.o.clipboard = 'unnamedplus'
+vim.opt.clipboard = 'unnamedplus'
 
--- Enable break indent
-vim.o.breakindent = true
-
-vim.o.swapfile = false
-vim.o.undofile = true
-vim.o.backup = false
+vim.opt.swapfile = false
+vim.opt.undofile = true
+vim.opt.backup = false
 
 -- Case-insensitive searching UNLESS \C or capital in search
-vim.o.ignorecase = true
-vim.o.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.wo.signcolumn = 'yes'
+vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 60
-vim.o.timeoutlen = 300
+vim.opt.updatetime = 60
+vim.opt.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
+vim.opt.completeopt = 'menuone,noselect'
 
--- NOTE: You should make sure your terminal supports this
-vim.o.termguicolors = true
+vim.opt.scrolloff = 6
 
-vim.o.scrolloff = 6
+vim.opt.cursorline = true
 
+vim.opt.splitbelow = true

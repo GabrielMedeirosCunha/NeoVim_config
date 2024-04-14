@@ -4,7 +4,7 @@ vim.g.loaded_netrwPlugin = 1
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
-
+vim.g.have_nerd_font = true
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
