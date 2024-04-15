@@ -7,15 +7,15 @@ require('nvim-treesitter.configs').setup {
   -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
   auto_install = false,
 
-  highlight = { enable = true },
+  highlight = { enable = true, use_languagetree = true },
   indent = { enable = true },
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = 'gka',
-      node_incremental = 'gkb',
-      scope_incremental = 'gkc',
-      node_decremental = 'gkm',
+      init_selection = 'gti',
+      node_incremental = 'gtn',
+      scope_incremental = 'gts',
+      node_decremental = 'gtd',
     },
   },
   textobjects = {
@@ -62,12 +62,8 @@ require('nvim-treesitter.configs').setup {
       },
     },
   },
-  {
     -- Install parsers synchronously (only applied to `ensure_installed`)
-    sync_install = false
-  },
-  {
+    sync_install = false,
     -- List of parsers to ignore installing (or "all")
     ignore_install = {},
-  },
 }
